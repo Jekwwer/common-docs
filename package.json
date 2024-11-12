@@ -1,0 +1,56 @@
+{
+  "name": "common-docs",
+  "version": "1.0.0",
+  "description": "A centralized repository containing standardized documentation files for consistent use across multiple projects.",
+  "scripts": {
+    "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
+    "check:spell": "cspell '**/*.md' --gitignore --cache",
+    "check:frontmatter": "remark . --ext .md",
+    "format": "prettier --write .",
+    "generate:toc": "find . -name '*.md' -not -path './node_modules/*' -exec markdown-toc -i {} \\;",
+    "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
+    "preview:docs:init": "docsify init docs",
+    "preview:docs": "docsify serve docs"
+  },
+  "devDependencies": {
+    "cspell": "^8.16.0",
+    "docsify-cli": "^4.4.4",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "markdown-link-check": "^3.13.6",
+    "markdown-toc": "^1.2.0",
+    "markdownlint-cli2": "^0.15.0",
+    "prettier": "^3.3.3",
+    "remark": "^15.0.1",
+    "remark-cli": "^12.0.1",
+    "remark-frontmatter": "^5.0.0"
+  },
+  "resolutions": {
+    "got": "^11.8.5",
+    "marked": "^4.0.10"
+  },
+  "lint-staged": {
+    "*.md": [
+      "yarn check:frontmatter",
+      "yarn check:links",
+      "yarn check:spell",
+      "yarn format",
+      "yarn lint:md"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jekwwer/common-docs"
+  },
+  "keywords": [
+    "code-of-conduct",
+    "documentation",
+    "github",
+    "issue-template",
+    "markdown",
+    "docker",
+    "devcontainer",
+    "vscode"
+  ],
+  "license": "MIT"
+}
