@@ -13,7 +13,7 @@
     "preview:docs": "docsify serve docs"
   },
   "devDependencies": {
-    "cspell": "^8.16.0",
+    "cspell": "^8.16.1",
     "docsify-cli": "^4.4.4",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
