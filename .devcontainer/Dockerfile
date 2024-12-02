@@ -6,7 +6,6 @@ FROM mcr.microsoft.com/devcontainers/javascript-node:22
 # Set environment variable to non-interactive mode for apt-get installations
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Define ARGs for the version of each package
 ARG HADOLINT_VERSION=v2.12.0
 ARG YARN_VERSION=1.22.22
 
@@ -18,12 +17,3 @@ RUN apt-get update && \
 
 # Install yarn globally
 RUN npm install -g yarn@${YARN_VERSION}
-
-# Set working directory
-WORKDIR /workspace
-
-# Copy package.json and yarn.lock files
-COPY package.json yarn.lock ./
-
-# Install dependencies with yarn and clear cache
-RUN yarn install --frozen-lockfile && yarn cache clean

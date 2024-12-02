@@ -1,0 +1,19 @@
+{
+  "ignorePaths": [
+    "*.json",
+    "*.yaml",
+    "*.yml",
+    ".*"
+  ],
+  "language": "en",
+  "useGitignore": true,
+  "version": "0.2",
+  "words": [
+    "docsify",
+    "Evgenii",
+    "frontmatter",
+    "Jekwwer",
+    "Shiliaev",
+    "tocstop"
+  ]
+}
