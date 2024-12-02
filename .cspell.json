@@ -1,6 +1,0 @@
-{
-  "version": "0.2",
-  "language": "en",
-  "words": ["Evgenii", "Jekwwer", "Shiliaev"],
-  "ignorePaths": [".git", ".devcontainer", "package.json", "yarn.lock"]
-}

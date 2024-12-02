@@ -1,9 +1,0 @@
-# .devcontainer/.dockerignore:
-# Ignores files and directories that should not be copied into the container.
-
-# Ignore all files by default
-*
-
-# Include package.json and yarn.lock for dependency installation
-!package.json
-!yarn.lock
