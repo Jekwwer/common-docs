@@ -32,6 +32,7 @@ assignees: ""
 
 ## Checklist
 
+- [ ] I have checked that this issue has not already been reported.
 - [ ] I have clearly described the problem.
 - [ ] I have provided detailed steps to reproduce.
 - [ ] I have outlined the expected behavior.

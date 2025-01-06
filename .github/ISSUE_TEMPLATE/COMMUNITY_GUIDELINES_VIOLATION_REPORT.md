@@ -32,6 +32,7 @@ assignees: ""
 
 ## Checklist
 
+- [ ] I have checked that this issue has not already been reported.
 - [ ] I have clearly described the violation and its impact.
 - [ ] I have provided details about the occurrence.
 - [ ] I have suggested a desired resolution.

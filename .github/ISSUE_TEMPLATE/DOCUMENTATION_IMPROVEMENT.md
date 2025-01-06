@@ -44,5 +44,5 @@ assignees: ""
 
 ## Checklist
 
-- [ ] I have checked that the issue has not already been reported.
+- [ ] I have checked that this issue has not already been reported.
 - [ ] I have provided specific examples and references.

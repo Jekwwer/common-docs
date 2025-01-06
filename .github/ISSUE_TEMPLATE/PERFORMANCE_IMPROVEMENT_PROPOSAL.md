@@ -26,6 +26,7 @@ assignees: ""
 
 ## Checklist
 
+- [ ] I have checked that this issue has not already been reported.
 - [ ] I have clearly described the performance issue and my proposed solution.
 - [ ] I have provided benchmark or profile data, if available.
 - [ ] I have outlined the expected benefits of the proposed solution.
