@@ -12,6 +12,8 @@ assignees: ""
 
 ...
 
+_Note: For quick questions or community discussions, please use our [Discussions][discussions] page instead of opening an issue._
+
 ## What I've Tried
 
 <!-- Describe what you've tried so far and what resources you've consulted. -->
@@ -24,11 +26,11 @@ assignees: ""
 
 ...
 
-_Note: For quick questions or community discussions, please use our [Discussions](https://github.com/[YourRepoName]/[YourRepo]/discussions) page instead of opening an issue._
-
 ## Checklist
 
 - [ ] I have checked that this question has not already been asked.
 - [ ] I have provided a detailed description of my question.
 - [ ] I have described what I've tried so far and the resources I've consulted.
 - [ ] I have added any additional context that might help in answering the question.
+
+[discussions]: https://github.com/jekwwer/common-docs/discussions

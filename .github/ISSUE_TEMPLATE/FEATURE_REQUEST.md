@@ -10,6 +10,8 @@ assignees: ""
 
 <!-- Is your feature request related to a problem? Please describe. -->
 
+_Note: For small adjustments or minor changes, please use our [Discussions][discussions] page instead of opening an issue._
+
 ...
 
 ## Solution
@@ -52,3 +54,5 @@ assignees: ""
 
 - [ ] I have checked that this feature has not already been requested.
 - [ ] I have discussed this feature with the maintainers/community.
+
+[discussions]: https://github.com/jekwwer/common-docs/discussions
