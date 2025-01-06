@@ -5,8 +5,8 @@ to maintain consistency and streamline the setup process.
 
 ## Current Contents
 
-- `LICENSE`: Template for licensing your project.
 - `CODE_OF_CONDUCT.md`: Community standards for participation.
+- `LICENSE`: The most common license in my repositories.
 
 ## Usage
 
