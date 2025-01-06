@@ -5,6 +5,7 @@ to maintain consistency and streamline the setup process.
 
 ## Current Contents
 
+- `.github/FUNDING.yml`:Information on funding and sponsorship options.
 - `CODE_OF_CONDUCT.md`: Community standards for participation.
 - `LICENSE`: The most common license in my repositories.
 
