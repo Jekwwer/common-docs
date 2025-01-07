@@ -10,7 +10,7 @@ to maintain consistency and streamline the setup process.
 - `.github/ISSUE_TEMPLATE/*`: Templates for reporting bugs, requesting features, and asking questions.
 - `.github/FUNDING.yml`: Information on funding options and sponsorship links.
 - `CODE_OF_CONDUCT.md`: Standards for behavior within the community.
-- `LICENSE`: Default license used across most repositories, clarifying usage rights.
+- `LICENSE.template`: MIT license template with placeholders, used across most repositories to clarify usage rights.
 - `SECURITY.md`: Guidelines for securely reporting vulnerabilities and related contact details.
 
 ## Usage
