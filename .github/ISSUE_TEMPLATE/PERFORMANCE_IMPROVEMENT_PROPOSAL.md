@@ -24,6 +24,13 @@ assignees: ""
 
 ...
 
+## Testing Strategy
+
+<!-- Outline how this performance improvement will be tested and verified.
+     Include specific test cases, metrics, or tools. -->
+
+...
+
 ## Checklist
 
 - [ ] I have checked that this issue has not already been reported.

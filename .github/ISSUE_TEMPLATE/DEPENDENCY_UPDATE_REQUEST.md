@@ -30,6 +30,12 @@ assignees: ""
 
 ...
 
+## Risk Assessment
+
+<!-- Discuss any potential risks or breaking changes that might occur from this update. -->
+
+...
+
 ## Additional Context
 
 <!-- Any additional information. -->

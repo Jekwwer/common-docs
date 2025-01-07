@@ -12,6 +12,18 @@ assignees: ""
 
 ...
 
+## Current Code Snippet
+
+<!-- Paste the code snippet you suggest refactoring. -->
+
+...
+
+## Suggested Refactoring
+
+<!-- Explain how you propose to refactor the code and why. -->
+
+...
+
 ## Benefits
 
 <!-- Explain the benefits this refactoring, like improved readability, performance, etc. -->

@@ -18,6 +18,12 @@ assignees: ""
 
 ...
 
+## Potential Drawbacks
+
+<!-- Discuss any potential downsides to the proposed enhancement. -->
+
+...
+
 ## Possible Implementation
 
 <!-- If you have ideas about how to implement this, share them here. -->

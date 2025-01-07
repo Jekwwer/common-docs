@@ -24,6 +24,12 @@ assignees: ""
 
 ...
 
+## Dependencies
+
+<!-- List any existing code, modules, or features that this test case depends on. -->
+
+...
+
 ## Additional Context
 
 <!-- Any additional information or context about the proposed test. -->

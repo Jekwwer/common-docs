@@ -39,6 +39,12 @@ assignees: ""
 
 ...
 
+## Logs or Debugging Output
+
+<!-- Paste relevant logs or error messages here. -->
+
+...
+
 ## Screenshots
 
 <!-- If applicable, add screenshots to help explain your problem. -->

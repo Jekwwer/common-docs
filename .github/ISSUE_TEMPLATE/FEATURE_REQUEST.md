@@ -20,6 +20,18 @@ _Note: For small adjustments or minor changes, please use our [Discussions][disc
 
 ...
 
+## Scope or Limitations
+
+<!-- Describe the boundaries of the feature, including what it is not intended to address or handle. -->
+
+...
+
+## Potential Caveats
+
+<!-- List any potential challenges, risks, or areas where the feature may not be applicable. -->
+
+...
+
 ## Benefits
 
 <!-- Describe the benefits this feature would bring. Who will benefit from it? -->

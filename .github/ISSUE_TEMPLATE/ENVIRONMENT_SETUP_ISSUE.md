@@ -24,6 +24,12 @@ assignees: ""
 
 ...
 
+## Logs or Error Messages
+
+<!-- Include any logs or error messages related to the environment setup issue. -->
+
+...
+
 ## Screenshots
 
 <!-- If applicable, add screenshots to help explain your problem. -->

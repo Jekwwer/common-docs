@@ -18,6 +18,18 @@ assignees: ""
 
 ...
 
+## Priority
+
+<!-- Specify the urgency or importance of this story. -->
+
+...
+
+## Dependencies
+
+<!-- List related features, modules, or user stories that this story depends on. -->
+
+...
+
 ## Additional Context
 
 <!-- Any additional information or context about the story. -->
