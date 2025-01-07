@@ -1,8 +1,8 @@
 # .github/FUNDING.yml: Lists funding platforms where jekwwer accept contributions.
 
-github: jekwwer
-buy_me_a_coffee: jekwwer
-ko_fi: jekwwer
-liberapay: jekwwer
-open_collective: jekwwer
-patreon: jekwwer
+github: { { GITHUB_USERNAME } }
+buy_me_a_coffee: { { BUY_ME_A_COFFEE_USERNAME } }
+ko_fi: { { KO_FI_USERNAME } }
+liberapay: { { LIBERAPAY_USERNAME } }
+open_collective: { { OPEN_COLLECTIVE_USERNAME } }
+patreon: { { PATREON_USERNAME } }

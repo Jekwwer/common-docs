@@ -12,7 +12,7 @@ assignees: ""
 
 ...
 
-_Note: For any security issues, please contact me privately at [report@jekwwer.com][report@jekwwer.com] before opening a public issue. Alternatively, you can open a private [Security Advisory][security-advisories] on GitHub._
+_Note: For any security issues, please contact me privately at [{{REPORT_EMAIL}}][{{REPORT_EMAIL}}] before opening a public issue. Alternatively, you can open a private [Security Advisory][security-advisories] on GitHub._
 
 ## Reproduction Steps
 
@@ -44,5 +44,5 @@ _Note: For any security issues, please contact me privately at [report@jekwwer.c
 - [ ] I understand the security implications of this report and have provided detailed information responsibly.
 - [ ] I have provided steps to reproduce the issue and an assessment of the potential impact.
 
-[report@jekwwer.com]: mailto:report@jekwwer.com
-[security-advisories]: https://github.com/Jekwwer/common-docs/security/advisories
+[{{REPORT_EMAIL}}]: mailto:{{REPORT_EMAIL}}
+[security-advisories]: {{SECURITY_URL}}

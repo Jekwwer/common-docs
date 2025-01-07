@@ -44,7 +44,7 @@ the project in public spaces.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported
-at [report@jekwwer.com][report@jekwwer.com].
+at [{{REPORT_EMAIL}}][{{REPORT_EMAIL}}].
 All complaints will be reviewed and addressed promptly and fairly, respecting the privacy and security of the reporter.
 
 ## Enforcement Guidelines
@@ -95,4 +95,4 @@ Translations are available [here][translations].
 [Mozilla CoC]: https://github.com/mozilla/diversity
 [FAQ]: https://www.contributor-covenant.org/faq
 [translations]: https://www.contributor-covenant.org/translations
-[report@jekwwer.com]: mailto:report@jekwwer.com
+[{{REPORT_EMAIL}}]: mailto:{{REPORT_EMAIL}}

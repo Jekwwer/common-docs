@@ -1,0 +1,29 @@
+# config.yml: Collects the information about the repository and the author.
+
+# Project Information
+repo_name: common-docs
+year_range: 2024-2025
+author_name: Evgenii Shiliaev
+
+# Contact Information
+contact_email: evgenii.shiliaev@jekwwer.com
+report_email: report@jekwwer.com
+
+# External Links
+contributing_url: https://github.com/jekwwer/common-docs/blob/main/CONTRIBUTING.md
+discussions_url: https://github.com/jekwwer/common-docs/discussions
+security_url: https://github.com/jekwwer/common-docs/security/advisories
+
+# Support and Funding
+github_username: jekwwer
+buy_me_a_coffee_username: jekwwer
+ko_fi_username: jekwwer
+liberapay_username: jekwwer
+open_collective_username: jekwwer
+patreon_username: jekwwer
+
+# Security Information
+response_time: 48
+resolution_time: 7
+latest_version: None
+previous_version: None
