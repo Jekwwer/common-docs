@@ -26,8 +26,7 @@ to maintain consistency and streamline the setup process.
 
 ### Potential Future Documentation
 
-To ensure a well-organized and professional repository, the following documents could be added as needed.
-These documents aim to enhance clarity, facilitate contributions, and provide users with a consistent experience:
+This table serves as a reference for adding new documents to meet future project requirements as they arise.
 
 | **Document Name**      | **Purpose**                                                                             |
 | ---------------------- | --------------------------------------------------------------------------------------- |
@@ -53,8 +52,6 @@ These documents aim to enhance clarity, facilitate contributions, and provide us
 | **TESTING.md**         | Explains testing frameworks, setup, and commands for running tests.                     |
 | **TODO.md**            | Lists future plans, pending features, or unresolved issues for transparency.            |
 | **USAGE.md**           | Advanced usage examples, command-line options, or API details.                          |
-
-This table serves as a reference for adding new documents to meet future project requirements as they arise.
 
 ## Contributing
 
