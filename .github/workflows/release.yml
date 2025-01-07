@@ -1,0 +1,84 @@
+# .github/workflows/release.yml:
+# Creates a release on GitHub with the latest documentation, deployment script, and configuration.
+---
+name: Release
+
+on:
+  push:
+    tags:
+      - "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" # Matches tags like 1970-01-01
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v4.2.2
+
+      - name: Set Environment Variables
+        run: |
+          # Replace '/' with '-' in the repository name and convert to lowercase
+          REPO_NAME_CLEAN="${GITHUB_REPOSITORY//\//-}"
+          REPO_NAME_CLEAN_LOWER=$(echo "$REPO_NAME_CLEAN" | tr '[:upper:]' '[:lower:]')
+          echo "REPO_NAME_CLEAN=$REPO_NAME_CLEAN_LOWER" >> $GITHUB_ENV
+        shell: bash
+
+      # Prepare the release package
+      - name: Prepare Release Package
+        run: |
+          mkdir -p release
+
+          # Copy deploys.sh
+          cp deploy.sh release/
+
+          # Copy all .md files except README.md, including from .github/
+          find . -type f -name "*.md" ! -name "README.md" -exec cp --parents {} release/ \;
+
+          # Copy config.yml
+          cp config.yml release/
+
+          # Copy LICENSE.template
+          cp LICENSE.template release/
+
+          # Copy specific .yml files from .github
+          mkdir -p release/.github/ISSUE_TEMPLATE
+          cp .github/ISSUE_TEMPLATE/config.yml release/.github/ISSUE_TEMPLATE/
+          cp .github/FUNDING.yml release/.github/
+
+          # Remove any unintended subfolders named 'release' inside the release folder
+          cd release
+          find release -type d -name "release" -exec rm -rf {} +
+
+          # Create the ZIP file
+          zip -r ${REPO_NAME_CLEAN}-${{ github.ref_name }}.zip .
+
+      # Create a release on GitHub
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.1.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_ACCESS_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: ${{ github.ref_name }}
+          body: |
+            This release contains the latest documentation, deployment script, and configuration.
+
+            **Full Changelog**: https://github.com/${{ github.repository }}/commits/${{ github.ref_name }}
+
+          draft: false
+          prerelease: false
+
+      # Upload the release asset
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: release/${{ env.REPO_NAME_CLEAN }}-${{ github.ref_name }}.zip
+          asset_name: ${{ env.REPO_NAME_CLEAN }}-${{ github.ref_name }}.zip
+          asset_content_type: application/zip
