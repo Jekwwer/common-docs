@@ -5,11 +5,13 @@ to maintain consistency and streamline the setup process.
 
 ## Current Contents
 
-- `.github/ISSUE_TEMPLATE/*`: Templates for reporting bugs, requesting features, and submitting questions.
-- `.github/FUNDING.yml`: Information on funding and sponsorship options.
-- `CODE_OF_CONDUCT.md`: Community standards for participation.
-- `LICENSE`: The most common license in my repositories.
-- `SECURITY.md`: Guidelines for reporting security vulnerabilities.
+- `.github/PULL_REQUEST_TEMPLATE.md`: Default pull request template for general contributions.
+- `.github/PULL_REQUEST_TEMPLATE/*`: Templates for specific pull requests, such as `bugfix`, `docs`, and `feature`.
+- `.github/ISSUE_TEMPLATE/*`: Templates for reporting bugs, requesting features, and asking questions.
+- `.github/FUNDING.yml`: Information on funding options and sponsorship links.
+- `CODE_OF_CONDUCT.md`: Standards for behavior within the community.
+- `LICENSE`: Default license used across most repositories, clarifying usage rights.
+- `SECURITY.md`: Guidelines for securely reporting vulnerabilities and related contact details.
 
 ## Usage
 
