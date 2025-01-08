@@ -198,10 +198,10 @@ This repository is licensed under MIT License. See the [LICENSE][LICENSE] file f
 
 ### Notes
 
-This repository was created using my [Markdown Template][markdown-template],
-currently at version [v1.0.2][markdown-template-v1.0.2].
+This repository is synchronized with the [Markdown Template][markdown-template],
+currently at version [v1.1.0][markdown-template-v1.1.0].
 The template serves as a development foundation for working on markdown documentation effectively.
 
 [markdown-template]: https://github.com/Jekwwer/markdown-template
-[markdown-template-v1.0.2]: https://github.com/Jekwwer/markdown-template/tree/v1.0.2
+[markdown-template-v1.1.0]: https://github.com/Jekwwer/markdown-template/tree/v1.1.0
 [LICENSE]: LICENSE
