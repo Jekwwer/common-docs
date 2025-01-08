@@ -15,14 +15,49 @@ to maintain consistency and streamline the setup process.
 
 ## Usage
 
-1. Clone this repository or download specific files as needed:
+1. **Run the Deployment Script**:
+   Use the `deploy.sh` script to download the latest release of the documentation and apply your custom configurations.
+
+   ```bash
+   bash deploy.sh --target <target_directory> [--config <path_to_config.yml>]
+   ```
+
+   - `--target <target_directory>`: Specify the directory where the documentation will be deployed.
+   - `--config <path_to_config.yml>` (optional): Path to the configuration file (`config.yml`). Defaults to `config.yml` in the current directory.
+
+2. **Automated Placeholder Replacement**:
+   The script will replace placeholders (e.g., `{{GITHUB_USERNAME}}`) in the downloaded files based on the values in your configuration file.
+
+3. **Preserves Folder Structure**:
+   The folder structure from the release will be maintained in the target directory.
+
+4. **License Handling**:
+   - If a `LICENSE` file does not exist in the target directory, the script renames `LICENSE.template` to `LICENSE` automatically.
+
+5. **Manual Usage (Optional)**:
+   Alternatively, you can manually clone the repository and copy specific files:
 
    ```bash
    git clone https://github.com/Jekwwer/common-docs.git
    ```
 
-2. Copy the desired documentation file(s) into your project.
-3. Customize the templates as necessary to suit your project's requirements.
+   Copy the desired documentation file(s) into your project and customize them as needed.
+
+---
+
+### Example
+
+To deploy the documentation to a new repository:
+
+```bash
+bash deploy.sh --target ../my-new-repo
+```
+
+This will:
+- Download the latest release.
+- Replace placeholders with values from `config.yml`.
+- Deploy the documentation to the `../my-new-repo` directory, preserving the folder structure.
+
 
 ### Potential Future Documentation
 
