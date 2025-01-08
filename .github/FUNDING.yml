@@ -1,4 +1,4 @@
-# .github/FUNDING.yml: Lists funding platforms where jekwwer accept contributions.
+# .github/FUNDING.yml: Lists funding platforms where {{AUTHOR_NAME}} accepts contributions.
 
 github: { { GITHUB_USERNAME } }
 buy_me_a_coffee: { { BUY_ME_A_COFFEE_USERNAME } }
