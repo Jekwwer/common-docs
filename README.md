@@ -23,15 +23,18 @@ to maintain consistency and streamline the setup process.
    ```
 
    - `--target <target_directory>`: Specify the directory where the documentation will be deployed.
-   - `--config <path_to_config.yml>` (optional): Path to the configuration file (`config.yml`). Defaults to `config.yml` in the current directory.
+   - `--config <path_to_config.yml>` (optional): Path to the configuration file (`config.yml`).
+     Defaults to `config.yml` in the current directory.
 
 2. **Automated Placeholder Replacement**:
-   The script will replace placeholders (e.g., `{{GITHUB_USERNAME}}`) in the downloaded files based on the values in your configuration file.
+   The script will replace placeholders (e.g., `{{GITHUB_USERNAME}}`) in the downloaded files based
+   on the values in your configuration file.
 
 3. **Preserves Folder Structure**:
    The folder structure from the release will be maintained in the target directory.
 
 4. **License Handling**:
+
    - If a `LICENSE` file does not exist in the target directory, the script renames `LICENSE.template` to `LICENSE` automatically.
 
 5. **Manual Usage (Optional)**:
@@ -54,10 +57,104 @@ bash deploy.sh --target ../my-new-repo
 ```
 
 This will:
+
 - Download the latest release.
 - Replace placeholders with values from `config.yml`.
 - Deploy the documentation to the `../my-new-repo` directory, preserving the folder structure.
 
+## Troubleshooting
+
+### 1. **`yq`, `curl`, or `unzip` Not Found**
+
+- **Problem**: The script fails with an error like:
+
+  ```bash
+  yq is required but not installed.
+  ```
+
+- **Solution**:
+
+  - Install the missing dependency:
+
+    - On Ubuntu/Debian:
+
+      ```bash
+      sudo apt update
+      sudo apt install curl unzip
+      ```
+
+    - For `yq`, download the binary from [yq GitHub releases](https://github.com/mikefarah/yq/releases).
+    - On macOS (using Homebrew):
+
+      ```bash
+      brew install yq curl unzip
+      ```
+
+### 2. **Permission Denied for `yq`**
+
+- **Problem**: You see an error like:
+
+  ```bash
+  /usr/bin/yq: Permission denied
+  ```
+
+- **Solution**:
+
+  - Ensure `yq` has executable permissions:
+
+    ```bash
+    chmod +x /usr/bin/yq
+    ```
+
+### 3. **Failed to Fetch Latest Release**
+
+- **Problem**: The script cannot fetch the latest release, showing:
+
+  ```bash
+  Failed to fetch the latest release information.
+  ```
+
+- **Solution**:
+
+  - Ensure you have an active internet connection.
+  - Verify the repository URL and owner are correct:
+
+    ```bash
+    --repo-owner Jekwwer --repo-name common-docs
+    ```
+
+  - Check GitHub API rate limits (if hitting limits, authenticate with a token):
+
+    ```bash
+    curl -s -H "Authorization: token YOUR_PERSONAL_ACCESS_TOKEN" https://api.github.com/rate_limit
+    ```
+
+### 4. **Placeholders Not Replaced**
+
+- **Problem**: Some placeholders (e.g., `{ { GITHUB_USERNAME } }`) remain unchanged in the files.
+- **Solution**:
+
+  - Ensure the `config.yml` contains values for all placeholders.
+  - Confirm placeholders in the files match the expected format (`{{PLACEHOLDER}}` or `{ { PLACEHOLDER } }`).
+  - Validate the `config.yml` file with:
+
+    ```bash
+    yq eval . config.yml
+    ```
+
+### 5. **Folder Structure Not Preserved**
+
+- **Problem**: Files are copied to the target directory but lose their original folder structure.
+- **Solution**:
+  - Ensure the `find` command and the `$REL_PATH` logic are working properly.
+  - Verify that the script has the necessary permissions to create directories in the target location.
+
+### 6. **`LICENSE` File Not Renamed**
+
+- **Problem**: `LICENSE.template` is not renamed to `LICENSE` in the target directory.
+- **Solution**:
+  - Check if a `LICENSE` file already exists in the target directory (the script skips renaming if one is present).
+  - Ensure `LICENSE.template` is included in the release archive.
 
 ### Potential Future Documentation
 
