@@ -1,6 +1,6 @@
 {
   "name": "jekwwer-common-docs",
-  "version": "2025-08-01",
+  "version": "2025-01-09",
   "description": "A centralized repository containing standardized documentation files for consistent use across multiple projects.",
   "scripts": {
     "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
