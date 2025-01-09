@@ -74,6 +74,7 @@ SECURITY_URL=$(escape_sed "$(yq eval '.security_url' "$CONFIG_FILE")")
 CONTRIBUTING_URL=$(escape_sed "$(yq eval '.contributing_url' "$CONFIG_FILE")")
 DISCUSSIONS_URL=$(escape_sed "$(yq eval '.discussions_url' "$CONFIG_FILE")")
 REPO_NAME=$(escape_sed "$(yq eval '.repo_name' "$CONFIG_FILE")")
+REPO_OWNER=$(escape_sed "$(yq eval '.repo_owner' "$CONFIG_FILE")")
 RESPONSE_TIME=$(escape_sed "$(yq eval '.response_time' "$CONFIG_FILE")")
 RESOLUTION_TIME=$(escape_sed "$(yq eval '.resolution_time' "$CONFIG_FILE")")
 
@@ -101,6 +102,7 @@ find "$TEMP_DIR" -type f -name "*.md" -o -name "*.yml" -o -name "LICENSE.templat
         -e "s/{[[:space:]]*{[[:space:]]*CONTRIBUTING_URL[[:space:]]*}[[:space:]]*}/$CONTRIBUTING_URL/g" \
         -e "s/{[[:space:]]*{[[:space:]]*DISCUSSIONS_URL[[:space:]]*}[[:space:]]*}/$DISCUSSIONS_URL/g" \
         -e "s/{[[:space:]]*{[[:space:]]*REPO_NAME[[:space:]]*}[[:space:]]*}/$REPO_NAME/g" \
+        -e "s/{[[:space:]]*{[[:space:]]*REPO_OWNER[[:space:]]*}[[:space:]]*}/$REPO_OWNER/g" \
         -e "s/{[[:space:]]*{[[:space:]]*RESPONSE_TIME[[:space:]]*}[[:space:]]*}/$RESPONSE_TIME/g" \
         -e "s/{[[:space:]]*{[[:space:]]*RESOLUTION_TIME[[:space:]]*}[[:space:]]*}/$RESOLUTION_TIME/g" \
         -e "s/{[[:space:]]*{[[:space:]]*LATEST_VERSION[[:space:]]*}[[:space:]]*}/$LATEST_VERSION/g" \

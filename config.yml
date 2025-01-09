@@ -1,6 +1,7 @@
 # config.yml: Collects the information about the repository and the author.
 
 # Project Information
+repo_owner: jekwwer
 repo_name: common-docs
 year_range: 2024-2025
 author_name: Evgenii Shiliaev
@@ -25,5 +26,5 @@ patreon_username: jekwwer
 # Security Information
 response_time: 48
 resolution_time: 7
-latest_version: None
-previous_version: None
+latest_version: no_value
+previous_version: no_value
