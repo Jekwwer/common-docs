@@ -13,6 +13,7 @@ report_email: report@jekwwer.com
 # External Links
 contributing_url: https://github.com/jekwwer/common-docs/blob/main/CONTRIBUTING.md
 discussions_url: https://github.com/jekwwer/common-docs/discussions
+issues_url: https://github.com/jekwwer/common-docs/issues
 security_url: https://github.com/jekwwer/common-docs/security/advisories
 
 # Support and Funding
