@@ -4,10 +4,13 @@
   "useGitignore": true,
   "version": "0.2",
   "words": [
+    "devcontainers",
+    "dockerfiles",
     "docsify",
     "Evgenii",
     "frontmatter",
     "Jekwwer",
+    "pyproject",
     "Shiliaev",
     "styleguide",
     "tocstop"
