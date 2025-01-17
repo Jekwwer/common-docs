@@ -4,8 +4,6 @@ This document outlines the style guide for **{{REPO_OWNER}}/{{REPO_NAME}}**, inc
 coding conventions, and file structure guidelines. Adhering to these guidelines ensures consistency
 and readability across the project.
 
----
-
 ## File and Directory Structure
 
 This section outlines the recommended structure for repository.
@@ -35,9 +33,7 @@ This section outlines the recommended structure for repository.
 | `README.md`               | Overview of the project, including setup and usage instructions.                      |
 | `SECURITY.md`             | Instructions for reporting security vulnerabilities.                                  |
 
----
-
-### **Development Tools (`.devcontainer/`)**
+#### **Development Tools (`.devcontainer/`)**
 
 | **Subdirectory/File** | **Purpose**                                                               |
 | --------------------- | ------------------------------------------------------------------------- |
@@ -45,9 +41,7 @@ This section outlines the recommended structure for repository.
 | `devcontainer.json`   | Configuration for devcontainers, defining the development environment.    |
 | `Dockerfile`          | Container image definition for development.                               |
 
----
-
-### **GitHub-Specific Configuration (`.github/`)**
+#### **GitHub-Specific Configuration (`.github/`)**
 
 | **Subdirectory/File**      | **Purpose**                                                                  |
 | -------------------------- | ---------------------------------------------------------------------------- |
@@ -58,18 +52,14 @@ This section outlines the recommended structure for repository.
 | `FUNDING.yml`              | Links to funding or donation platforms like GitHub Sponsors or PayPal.       |
 | `PULL_REQUEST_TEMPLATE.md` | Default template for pull requests.                                          |
 
----
-
-### **Git Hooks (`.husky/`)**
+#### **Git Hooks (`.husky/`)**
 
 | **File/Hook**       | **Purpose**                                                               |
 | ------------------- | ------------------------------------------------------------------------- |
 | `.husky/pre-commit` | Runs pre-commit tasks (e.g., linting, testing) before committing changes. |
 | `.husky/pre-push`   | Executes tasks like running tests before pushing code.                    |
 
----
-
-### **Scripts (`scripts/`)**
+#### **Scripts (`scripts/`)**
 
 | **File/Script** | **Purpose**                                            |
 | --------------- | ------------------------------------------------------ |
@@ -77,9 +67,7 @@ This section outlines the recommended structure for repository.
 | `build.sh`      | Script to build the project locally or for production. |
 | `test.sh`       | Wrapper for running tests and linting.                 |
 
----
-
-### **Source Code (`src/`)**
+#### **Source Code (`src/`)**
 
 | **Subdirectory/File**   | **Purpose**                                  |
 | ----------------------- | -------------------------------------------- |
@@ -90,17 +78,13 @@ This section outlines the recommended structure for repository.
 | `models/`               | Data models or schemas.                      |
 | `services/`             | Business logic or service-layer code.        |
 
----
-
-### **Tests (`tests/`)**
+#### **Tests (`tests/`)**
 
 | **Subdirectory/File** | **Purpose**                |
 | --------------------- | -------------------------- |
 | `test_<module>.py`    | Unit tests for `<module>`. |
 | `integration/`        | Integration tests.         |
 | `fixtures/`           | Test data or mock files.   |
-
----
 
 ## Commit Messages
 
@@ -156,8 +140,6 @@ A well-structured commit message comprises three parts:
 [REFERENCES]
  - <links to documentation, code reviews, or related resources>
 ```
-
----
 
 ### Part-by-Part Breakdown
 
@@ -234,8 +216,6 @@ Include any of these sections as needed for clarity.
 - **References (Optional):**
   - `[REFERENCES]`: Links to documentation, code reviews, or designs related to the change.
 
----
-
 ### Example Commit Message
 
 ```plaintext
@@ -275,16 +255,12 @@ Improved error handling in login flows.
  - OAuth2 Documentation: https://example.com/oauth2
 ```
 
----
-
 ### Best Practices
 
 1. **Be Concise and Specific:** Focus on what the commit does and why.
 2. **Use Imperative Mood:** Write as if giving commands (e.g., "add feature" not "added feature").
 3. **Separate Logical Changes:** Each commit should focus on one specific change.
 4. **Follow the Template:** Use consistent formatting to improve readability and collaboration.
-
----
 
 ## Purpose of This Guide
 
