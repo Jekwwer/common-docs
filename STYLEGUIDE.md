@@ -14,7 +14,6 @@ This section outlines the recommended structure for repository.
 | ------------------------- | ------------------------------------------------------------------------------------- |
 | `.devcontainer/`          | Configuration for development containers (e.g., Dockerfiles and `devcontainer.json`). |
 | `.github/`                | GitHub-specific configuration files, such as issue and pull request templates.        |
-| `.husky/`                 | Git hooks managed by Husky for tasks like linting, testing, etc.                      |
 | `docs/`                   | Project documentation, including guides and FAQs.                                     |
 | `scripts/`                | Custom scripts for automation (e.g., deployment, setup, or CI tasks).                 |
 | `src/`                    | Source code for the project.                                                          |
@@ -51,13 +50,6 @@ This section outlines the recommended structure for repository.
 | `dependabot.yml`           | Configuration file for Dependabot to automate dependency updates.            |
 | `FUNDING.yml`              | Links to funding or donation platforms like GitHub Sponsors or PayPal.       |
 | `PULL_REQUEST_TEMPLATE.md` | Default template for pull requests.                                          |
-
-#### **Git Hooks (`.husky/`)**
-
-| **File/Hook**       | **Purpose**                                                               |
-| ------------------- | ------------------------------------------------------------------------- |
-| `.husky/pre-commit` | Runs pre-commit tasks (e.g., linting, testing) before committing changes. |
-| `.husky/pre-push`   | Executes tasks like running tests before pushing code.                    |
 
 #### **Scripts (`scripts/`)**
 
@@ -266,5 +258,10 @@ Improved error handling in login flows.
 
 This style guide ensures consistency, enhances clarity, and aligns with the project's goals.
 By following these conventions, we make the repository easier to navigate, extend, and maintain.
+
+## Acknowledgments
+
+- This project follows a customized version of the [Conventional Commits][conventional-commits] specification
+  to ensure clear and consistent commit messages.
 
 [conventional-commits]: https://www.conventionalcommits.org
