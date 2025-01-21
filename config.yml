@@ -1,5 +1,5 @@
 # config.yml: Collects the information about the repository and the author.
-
+---
 # Project Information
 repo_owner: jekwwer
 repo_name: common-docs

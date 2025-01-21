@@ -1,0 +1,8 @@
+# mkdocs.yml: Configures the MkDocs documentation site.
+---
+site_name: Jekwwer's Common Docs
+site_url: https://jekwwer.github.io/common-docs/
+theme:
+  name: material
+nav:
+  - Home: index.md
